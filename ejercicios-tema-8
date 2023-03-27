@@ -1,0 +1,86 @@
+public class Persona {
+    // Atributos de la clase Persona
+    private String nombre;
+    private int edad;
+    private String telefono;
+    private String direccion;
+    
+    // Constructor de la clase Persona
+    public Persona(String nombre, int edad, String telefono, String direccion) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.telefono = telefono;
+        this.direccion = direccion;
+    }
+    
+    // Métodos get y set para la variable nombre
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    // Métodos get y set para la variable edad
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    
+    // Métodos get y set para la variable telefono
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    // metodos get, set para la variable direccion
+
+    public String getDireccion(String direccion) {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+
+    
+    // Método para mostrar los datos de la persona en la consola
+    public void mostrarDatos() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Teléfono: " + telefono);
+        System.out.println("Dirección: " + direccion);
+    }
+    
+    // Método principal para probar la clase Persona
+    public static void main(String[] args) {      // incluyendo persona1 en el main y mostrando nuevos datos en consola haciendo
+                                                  // uso de los gets y sets. 
+        // Crear una instancia de la clase Persona
+        Persona persona1 = new Persona("Hernan", 25, "69832469", "Calle 43");
+        
+        // Mostrar los datos de la persona en la consola
+        persona1.mostrarDatos();
+        
+        // Cambiar el nombre de la persona
+        persona1.setNombre("Dolly");
+        
+        // Cambiar la edad de la persona
+        persona1.setEdad(45);
+        
+        // Cambiar el teléfono de la persona
+        persona1.setTelefono("69045553");
+
+        persona1.setDireccion("avenida-bella-221");
+        
+        // Mostrar los nuevos datos de la persona en la consola
+        persona1.mostrarDatos();
+    }
+}
